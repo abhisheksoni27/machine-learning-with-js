@@ -7,11 +7,14 @@ let csvData = [], // parsed Data
     X = [], // Input
     y = []; // Output
 
-var regressionModel;
+let regressionModel;
 
 const readline = require('readline'); // For user prompt to allow predictions
 
-const rl = readline.createInterface({input: process.stdin, output: process.stdout});
+const rl = readline.createInterface({
+    input: process.stdin, 
+    output: process.stdout
+});
 
 csv()
     .fromFile(csvFilePath)
@@ -37,8 +40,8 @@ function dressData(resolve) {
      *   Newspaper: "20",
      *   "Sales": "1000"
      * }
-     * 
-     * Hence, while adding the data points, 
+     *
+     * Hence, while adding the data points,
      * we need to parse the String value as a Float.
      */
     csvData.forEach((row) => {
@@ -56,7 +59,7 @@ function f(s) {
 }
 
 function predictOutput() {
-    rl.question('Enter input X for prediction: ', (answer) => {
+    rl.question('Enter input X for prediction (Press CTRL+C to exit) : ', (answer) => {
         console.log(`At X = ${answer}, y =  ${regressionModel.predict(parseFloat(answer))}`);
         predictOutput();
     });

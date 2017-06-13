@@ -1,10 +1,10 @@
-## Machine Learning using JavaScript
+## Machine Learning with JavaScript
 
 You don't need ~~Python~~ to train your own models and perform Machine Learning.
 
 This repository is linked to a series I have been writing about on Medium.com, regarding _ML in JS_. [Machine Learning with Javascript : Part 1](https://medium.com/@abhisheksoni2720/machine-learning-in-javascript-part-1)
 
-## Repository Information
+## Repository Info
 
 The repository is organized as follows:
 
