@@ -31,7 +31,7 @@ function performRegression() {
     predictOutput();
 }
 
-function dressData(resolve) {
+function dressData(callback) {
     /**
      * One row of the data object looks like:
      * {
@@ -49,9 +49,7 @@ function dressData(resolve) {
         y.push(f(row.Sales));
     });
 
-    return new Promise(resolve, function () {
-        throw new Error('Cannot process csv Data');
-    });
+    callback();
 }
 
 function f(s) {
