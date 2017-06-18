@@ -22,7 +22,8 @@ csv()
         csvData.push(jsonObj);
     })
     .on('done', () => {
-        dressData(performRegression); // To get data points from JSON Objects
+        dressData(); // To get data points from JSON Objects
+        performRegression(); 
     });
 
 function performRegression() {
@@ -31,7 +32,7 @@ function performRegression() {
     predictOutput();
 }
 
-function dressData(callback) {
+function dressData() {
     /**
      * One row of the data object looks like:
      * {
@@ -48,8 +49,6 @@ function dressData(callback) {
         X.push(f(row.Radio));
         y.push(f(row.Sales));
     });
-
-    callback();
 }
 
 function f(s) {
