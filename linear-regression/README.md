@@ -1,0 +1,2 @@
+# Linear Regression
+For a walk through, please refer to the article on Medium. [Machine Learning with Javascript : Part 1 (Linear Regression)](https://hackernoon.com/machine-learning-with-javascript-part-1-9b97f3ed4fe5)
