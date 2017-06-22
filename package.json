@@ -1,14 +1,14 @@
 {
   "name": "getting-started-with-ml-using-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Machine Learning with JavaScript. Fast and Simple.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["machine learning", "ML", "ML in JS", "artificial intelligence", "AI"],
+  "author": "Abhishek Soni",
+  "license": "MIT",
   "dependencies": {
     "csvtojson": "^1.1.6",
     "ml-knn": "^1.0.0",
