@@ -1,4 +1,4 @@
-## Machine Learning with JavaScript
+## Machine Learning with JavaScript :rocket:
 
 You don't need ~~Python~~ to train your own models and perform Machine Learning.
 
