@@ -1,8 +1,7 @@
 const KNN = require('ml-knn');
 const csv = require('csvtojson');
 const prompt = require('prompt');
-const knn = new KNN();
-
+let knn;
 const csvFilePath = 'iris.csv'; // Data
 const names = ['sepalLength', 'sepalWidth', 'petalLength', 'petalWidth', 'type']; // For header
 
@@ -68,7 +67,7 @@ function dressData() {
 }
 
 function train() {
-    knn.train(trainingSetX, trainingSetY, { k:7 });
+    knn = new KNN(trainingSetX, trainingSetY, {k: 7});
     test();
 }
 
@@ -99,7 +98,7 @@ function predict() {
             for (var key in result) {
                 temp.push(parseFloat(result[key]));
             }
-            console.log(`With ${temp} -- type =  ${knn.getSinglePrediction(temp)}`);
+            console.log(`With ${temp} -- type =  ${knn.predict(temp)}`);
         }
     });
 }

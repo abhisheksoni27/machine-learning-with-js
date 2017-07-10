@@ -6,12 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["machine learning", "ML", "ML in JS", "artificial intelligence", "AI"],
+  "keywords": [
+    "machine learning",
+    "ML",
+    "ML in JS",
+    "artificial intelligence",
+    "AI"
+  ],
   "author": "Abhishek Soni",
   "license": "MIT",
   "dependencies": {
     "csvtojson": "^1.1.6",
-    "ml-knn": "^1.0.0",
+    "ml-knn": "^2.0.0",
     "ml-regression": "^4.2.1",
     "prompt": "^1.0.0"
   }
