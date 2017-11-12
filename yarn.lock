@@ -34,8 +34,8 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
 
 csvtojson@^1.1.6:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/csvtojson/-/csvtojson-1.1.7.tgz#17ded07aec0d8c01f2d6f6871cfa36ab88b149b1"
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/csvtojson/-/csvtojson-1.1.9.tgz#e641ae72f7bc2fa3f9aaf127e021fc89447c1cd1"
   dependencies:
     lodash "^4.17.3"
     strip-bom "1.0.0"
@@ -72,8 +72,8 @@ glob@^7.0.5:
     path-is-absolute "^1.0.0"
 
 i@0.3.x:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/i/-/i-0.3.5.tgz#1d2b854158ec8169113c6cb7f6b6801e99e211d5"
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/i/-/i-0.3.6.tgz#d96c92732076f072711b6b10fd7d4f65ad8ee23d"
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -126,23 +126,24 @@ mkdirp@0.x.x:
   dependencies:
     minimist "0.0.8"
 
-ml-array-utils@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/ml-array-utils/-/ml-array-utils-0.3.0.tgz#c0cc5afdc1cb051f5a83b1ce71641c243672f649"
+ml-array-max@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ml-array-max/-/ml-array-max-1.0.1.tgz#bd6213b1e0fdccf0eebb9c9a677c2d2405a92181"
+
+ml-array-min@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ml-array-min/-/ml-array-min-1.0.1.tgz#544b71ee0b2f38e6093e6a5964af8a6daff22f28"
+
+ml-array-rescale@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/ml-array-rescale/-/ml-array-rescale-1.1.0.tgz#e5a6aaff247865d1e1c8acfb8ef630fe5df1e3a2"
   dependencies:
-    ml-stat "^1.0.1"
+    ml-array-max "^1.0.1"
+    ml-array-min "^1.0.1"
 
 ml-distance-euclidean@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ml-distance-euclidean/-/ml-distance-euclidean-1.0.0.tgz#08447c2233641a2b2a9b4c29e5f792d28f1d5b95"
-
-ml-distance@^2.0.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/ml-distance/-/ml-distance-2.1.1.tgz#f6cc1f2970819cb42e68c68de363309ba3bd079f"
-  dependencies:
-    ml-distance-euclidean "^1.0.0"
-    ml-stat "^1.0.1"
-    ml-tree-similarity "^0.0.0"
 
 ml-kernel-gaussian@^2.0.1:
   version "2.0.1"
@@ -159,26 +160,26 @@ ml-kernel-sigmoid@^1.0.0:
   resolved "https://registry.yarnpkg.com/ml-kernel-sigmoid/-/ml-kernel-sigmoid-1.0.0.tgz#884b28be13f61a60a5173f04240e8096eb1d9cd2"
 
 ml-kernel@^2.0.0:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/ml-kernel/-/ml-kernel-2.3.3.tgz#a9b2ee69a03c2cf24b15976146354d2b1f29aa4a"
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/ml-kernel/-/ml-kernel-2.3.4.tgz#7f6cdd5a3a9b1b6ee3c34bfd15c181664a0661dd"
   dependencies:
     ml-distance-euclidean "^1.0.0"
     ml-kernel-gaussian "^2.0.1"
     ml-kernel-polynomial "^2.0.0"
     ml-kernel-sigmoid "^1.0.0"
-    ml-matrix "^3.0.0"
+    ml-matrix "^5.0.0"
 
-ml-knn@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ml-knn/-/ml-knn-1.0.0.tgz#6a98ea95db5b901db06d0b4220600153c2ef89d5"
+ml-knn@^2.0.0:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/ml-knn/-/ml-knn-2.1.3.tgz#12b9d5c8877d98078d635d64d1acc8ad974f442b"
   dependencies:
-    ml-distance "^2.0.1"
+    ml-distance-euclidean "^1.0.0"
 
-ml-matrix@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/ml-matrix/-/ml-matrix-3.0.0.tgz#e8dd9ee2e976757f0d4e10512cc0466b7f324ecd"
+ml-matrix@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/ml-matrix/-/ml-matrix-5.0.1.tgz#2cb1f20b33ed8a0475dadd68ca7a6f7da5c5482c"
   dependencies:
-    ml-array-utils "^0.3.0"
+    ml-array-rescale "^1.1.0"
 
 ml-regression-base@^1.0.0, ml-regression-base@^1.1.1, ml-regression-base@^1.2.0:
   version "1.2.0"
@@ -192,17 +193,17 @@ ml-regression-exponential@^1.0.0:
     ml-regression-simple-linear "^1.0.1"
 
 ml-regression-multivariate-linear@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ml-regression-multivariate-linear/-/ml-regression-multivariate-linear-1.0.0.tgz#dffa255e5a344e599f379895125d2b737d3750fd"
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ml-regression-multivariate-linear/-/ml-regression-multivariate-linear-1.0.1.tgz#fb1f1eb7cadac11d27eacc9473da2b83795ec0cb"
   dependencies:
-    ml-matrix "^3.0.0"
+    ml-matrix "^5.0.0"
     ml-regression-base "^1.2.0"
 
 ml-regression-polynomial@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/ml-regression-polynomial/-/ml-regression-polynomial-1.0.2.tgz#10fde6550d4a9a887e5628628a5027323e0ff7ee"
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/ml-regression-polynomial/-/ml-regression-polynomial-1.0.3.tgz#bd77838c8b673ddcc6ad6e53959a9a97789b80c5"
   dependencies:
-    ml-matrix "^3.0.0"
+    ml-matrix "^5.0.0"
     ml-regression-base "^1.1.1"
 
 ml-regression-power@^1.0.0:
@@ -213,10 +214,10 @@ ml-regression-power@^1.0.0:
     ml-regression-simple-linear "^1.0.2"
 
 ml-regression-robust-polynomial@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ml-regression-robust-polynomial/-/ml-regression-robust-polynomial-1.0.0.tgz#35566cdda308725da7c23ebbcf6c088be3f4ae05"
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ml-regression-robust-polynomial/-/ml-regression-robust-polynomial-1.0.1.tgz#870793f61bde021d002e439ebb4064428ed9d888"
   dependencies:
-    ml-matrix "^3.0.0"
+    ml-matrix "^5.0.0"
     ml-regression-base "^1.2.0"
 
 ml-regression-simple-linear@^1.0.0, ml-regression-simple-linear@^1.0.1, ml-regression-simple-linear@^1.0.2:
@@ -233,12 +234,12 @@ ml-regression-theil-sen@^1.0.0:
     ml-stat "^1.3.3"
 
 ml-regression@^4.2.1:
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/ml-regression/-/ml-regression-4.4.1.tgz#cb8930f06a9cdf8116e8670c9688a90c6c7f50c9"
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/ml-regression/-/ml-regression-4.4.2.tgz#d19b376bcc990968cda0d9c3e59f04fd12b91a5f"
   dependencies:
     is-integer "^1.0.6"
     ml-kernel "^2.0.0"
-    ml-matrix "^3.0.0"
+    ml-matrix "^5.0.0"
     ml-regression-base "^1.2.0"
     ml-regression-exponential "^1.0.0"
     ml-regression-multivariate-linear "^1.0.0"
@@ -249,13 +250,9 @@ ml-regression@^4.2.1:
     ml-regression-theil-sen "^1.0.0"
     ml-stat "^1.3.3"
 
-ml-stat@^1.0.1, ml-stat@^1.3.3:
+ml-stat@^1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/ml-stat/-/ml-stat-1.3.3.tgz#8a5493b0f67382fbf705c260e070436655a7dcfa"
-
-ml-tree-similarity@^0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/ml-tree-similarity/-/ml-tree-similarity-0.0.0.tgz#0884655798caada2cc6f1f137457b4b0a2ab6cdd"
 
 mute-stream@~0.0.4:
   version "0.0.7"
@@ -284,8 +281,8 @@ pkginfo@0.3.x:
   resolved "https://registry.yarnpkg.com/pkginfo/-/pkginfo-0.3.1.tgz#5b29f6a81f70717142e09e765bbeab97b4f81e21"
 
 pkginfo@0.x.x:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/pkginfo/-/pkginfo-0.4.0.tgz#349dbb7ffd38081fcadc0853df687f0c7744cd65"
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/pkginfo/-/pkginfo-0.4.1.tgz#b5418ef0439de5425fc4995042dced14fb2a84ff"
 
 prompt@^1.0.0:
   version "1.0.0"
@@ -309,8 +306,8 @@ revalidator@0.1.x:
   resolved "https://registry.yarnpkg.com/revalidator/-/revalidator-0.1.8.tgz#fece61bfa0c1b52a206bd6b18198184bdd523a3b"
 
 rimraf@2.x.x:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.1.tgz#c2338ec643df7a1b7fe5c54fa86f57428a55f33d"
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.2.tgz#2ed8150d24a16ea8651e6d6ef0f47c4158ce7a36"
   dependencies:
     glob "^7.0.5"
 
