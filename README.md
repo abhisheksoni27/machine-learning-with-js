@@ -16,7 +16,7 @@ The repository is organized as follows:
 ## Get started
 
 1. Clone this repo, or fork it and clone your own copy.
-2. Run `npm install` or `yarn` inside the repository to download the required `node_modules.`
+2. Run `npm install` or `yarn` inside the repository to download the required `node_modules`.
 
 That's it. 
 
