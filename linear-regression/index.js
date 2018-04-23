@@ -57,7 +57,7 @@ function f(s) {
 
 function predictOutput() {
     rl.question('Enter input X for prediction (Press CTRL+C to exit) : ', (answer) => {
-        console.log(`At X = ${answer}, y =  ${regressionModel.predict(parseFloat(answer))}`);
+        console.log(`At X = ${answer}, y =  ${regressionModel.predict(parseFloat(answer)).toFixed(2)}`);
         predictOutput();
     });
 }
