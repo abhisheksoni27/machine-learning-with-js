@@ -18,7 +18,7 @@ const rl = readline.createInterface({
 
 csv()
     .fromFile(csvFilePath)
-    .on('json', (jsonObj) => {
+    .subscribe(jsonObj => {
         csvData.push(jsonObj);
     })
     .on('done', () => {
@@ -46,8 +46,8 @@ function dressData() {
      * we need to parse the String value as a Float.
      */
     csvData.forEach((row) => {
-        X.push(f(row.Radio));
-        y.push(f(row.Sales));
+        X.push(f(row.radio)); // or row['radio']
+        y.push(f(row.sales)); // or row['sales']
     });
 }
 
